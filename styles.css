@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    width: 99vw;
+    height: 100vh;
+}
+
+header {
+    background-color: #95bfff;
+    padding: 20px;
+    padding-bottom: 150px;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.blue {
+    background-color: #95bfff;
+    padding: 0px;
+}
+
+.search-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#catImages {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#catImages img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#catSearchForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#catSearchForm label {
+    margin-right: 10px;
+}
+
+#catSearchForm input[type="text"],
+#catSearchForm button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#catSearchForm button {
+    background-color: #4c53af;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#catSearchForm button:hover {
+    background-color: #4546a0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#factList {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.fact-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.fact-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+}
+
+button#addFactButton {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4c53af;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#addFactButton:hover {
+    background-color: #4546a0;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.cat {
+    background-color: #95bfff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    position: relative;
+}
+
+.cat img {
+    max-height: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.description {
+    text-align: center;
+    padding: 20px;
+}
+
+.description h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #555;
+}
+
+.description h1 {
+    margin: 10px 0;
+    font-size: 48px;
+    color: #333;
+}
+
+.description p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #777;
+}
