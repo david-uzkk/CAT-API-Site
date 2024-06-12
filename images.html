@@ -5,14 +5,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat Images</title>
+    <title>Kittens - Cat Images</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/icon.jpg" type="image/x-icon">
 </head>
-<body style="background-color: #95bfff;">
+<body style="background-color: #95bfff; width: 100%;">
     <header style="padding-bottom: 50px;">
         <nav>
             <ul>
-                <li><a href="images.html">Images</a></li>
+                <li><a href="images.html" style="text-decoration: underline;">Images</a></li>
                 <div class="logo"><a href="index.html" style="text-decoration: none; color: white;">KITTENS</a></div>
                 <li><a href="facts.html">Facts</a></li>
             </ul>
@@ -21,14 +22,25 @@
     <main class="blue">
         <div class="search-container">
             <form id="catSearchForm">
-                <label for="searchTag">Search for kittens:</label>
+                <label for="searchTag">Search for kittens(orange, black, down e etc...):</label>
                 <input type="text" id="searchTag" name="searchTag">
                 <button type="submit">Search</button>
             </form>
+            <h5 style="margin-top: 15px;">Click on the image to edit the title or delete the image and title.</h2>
             <div id="catImages"></div>
         </div>
     </main>
-
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Image Title</h2>
+            <input type="text" id="editFactText" placeholder="Enter new title...">
+            <div>
+                <button id="saveFactButton">Save</button>
+                <button id="deleteFactButton">Delete</button>
+            </div>
+        </div>
+    </div>
     <script src="js/script1.js"></script>
 </body>
 </html>

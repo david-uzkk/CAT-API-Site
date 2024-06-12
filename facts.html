@@ -1,10 +1,13 @@
+<!-- facts.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat Facts</title>
+    <title>Kittens - Cat Facts</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/icon.jpg" type="image/x-icon">
 </head>
 <body style="background-color: #95bfff;">
     <header style="padding-bottom: 50px;">
@@ -12,20 +15,37 @@
             <ul>
                 <li><a href="images.html">Images</a></li>
                 <div class="logo"><a href="index.html" style="text-decoration: none; color: white;">KITTENS</a></div>
-                <li><a href="facts.html">Facts</a></li>
+                <li><a href="facts.html" style="text-decoration: underline;">Facts</a></li>
             </ul>
         </nav>
     </header>
     <main class="blue">
         <div class="container">
-            <h2>Cat Facts</h1>
+            <h2>Cat Facts</h2>
             <button id="addFactButton">Add Fact</button>
+            <h5>Click on the imga to edit or delete the fact.</h2>
             <div id="factList">
                 <!-- list of cat facts -->
             </div>
         </div>
     </main>
-    
+    <div id="factModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <textarea id="editFactText" rows="4" cols="50"></textarea>
+            <button id="saveFactButton">Save</button>
+            <button id="deleteFactButton">Delete</button>
+        </div>
+    </div>
+    <div id="factModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <textarea id="editFactText"></textarea>
+            <button id="saveFactButton">Save</button>
+            <button id="deleteFactButton">Delete</button>
+        </div>
+    </div>
+
     <script src="js/script2.js"></script>
 </body>
 </html>
