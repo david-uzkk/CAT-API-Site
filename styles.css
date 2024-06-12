@@ -55,6 +55,9 @@ nav ul li a {
     text-align: center;
 }
 
+.cat-image-container {
+    cursor: pointer; 
+}
 #catImages {
     margin-top: 20px;
     display: flex;
